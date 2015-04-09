@@ -6,9 +6,9 @@
                    onclick="ga('send', 'event', 'tw', 'tw')" class="tw-logo">
                     <img src="./img/tw-logo.png" alt="ThoughtWorks" align="center" />
                 </a>
-                <h1>Geek Night Pune</h1>
+                <h1>Papers We Love</h1>
 
-                <h6>an open forum for geeks to connect, discuss &amp; learn latest ideas, technologies and trends in software development</h6>
+                <h6> is a <a href="https://github.com/papers-we-love/papers-we-love">repository</a> of academic computer science papers and a community who loves reading them.</h6>
 
                 <% if @item[:subheader] %>
                     <h5 class="subheader"><%= @item[:subheader] %></h5>
@@ -48,15 +48,15 @@
         </div>
 
         <div class="row actions">
-            <div class="large-5 columns participate">
+            <div class="large-11 columns participate">
                 <% if item[:participate] %>
-                    <a href="<%= @item[:participate] %>" target="_blank" rel="nofollow"
+                    <a href="<%= @item[:participate] %>" target="_blank"                 rel="nofollow"
                        onclick="ga('send', 'event', 'participate', 'participate')">
                         <h4>Participate</h4>
                     </a>
                     <p>
-                        to learn exciting new stuff <br />
-                        <small>(and to connect with fellow geeks)</small>
+                       to share the ideas in an awesome academic/research paper with fellow engineers, programmers, and paper-readers <br />
+                        <small>(or show off code that you wrote that implements these ideas)</small>
                     </p>
                 <% else %>
                     <a href="javascript:void(0)">
@@ -70,16 +70,16 @@
                     <% else %>
                         <p>
                             registrations closed <br />
-                            <small>(sorry, but check out next geek night)</small>
+                            <small>(sorry, but check out next Papers We Love event)</small>
                         </p>
                     <% end %>
                 <% end %>
             </div>
-            <div class="large-2 columns participate-or-talk">
+           <!-- <div class="large-2 columns participate-or-talk">
                 <hr class="show-for-small" />
                 <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
-            </div>
-            <div class="large-5 columns talk">
+            </div>-->
+    <!--        <div class="large-5 columns talk">
                 <% if item[:talk] %>
                     <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow"
                        onclick="ga('send', 'event', 'talk', 'talk')">
@@ -98,7 +98,7 @@
                         <small>(please check out in a few days)</small>
                     </p>
                 <% end %>
-            </div>
+            </div>-->
         </div>
     </section>
 
